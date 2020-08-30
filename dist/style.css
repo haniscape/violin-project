@@ -5,16 +5,63 @@
 }
 
 body {
-	background: #964b00;
+	color: #964b00;
 	font-family: 'Cinzel', serif;
+	overflow-x: hidden !important;
+	width: 100%;
+}
+
+body:before {
+	content: "";
 	background: url(../img/violin-all.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: 10% 50%;
-	background-size: auto;
+	background-position: -15% 50%;
+	background-size: 30% auto;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
 }
 
-main {
+@media only screen and (max-width: 650px) {
+	body:before {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	header img {
+		display: none;
+	}
+	.container {
+		margin: 0;
+	}
+
+	#youtube {
+		margin: 0 auto;
+	}
+	#instructions ul li {
+		font-size: 1rem;
+	}
+	#instructions .howto {
+		padding: 1.7rem;
+		line-height: 2.5rem;
+		margin: 0;
+	}
+}
+
+header h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	width: 65%;
+	margin: 56px 0;
+}
+
+header img {
+	width: 70%;
 }
 
 div#fingerboard {
@@ -26,7 +73,11 @@ div#fingerboard {
 }
 
 .container {
-	margin-top: 3rem;
+	margin: 3rem auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .divider {
@@ -34,9 +85,12 @@ div#fingerboard {
 	margin: 50px auto;
 }
 
-iframe {
-	display: block;
+.player {
+	display: flex;
 	margin: 2rem auto;
+	width: 75%;
+	justify-content: center;
+	align-items: center;
 }
 
 quote {
@@ -44,7 +98,15 @@ quote {
 	text-align: center;
 }
 
-#instructions ul {
-	font-size: 1.9rem;
-	list-style: none;
+#instructions {
+	margin-bottom: 0;
+}
+#instructions .howto {
+	padding: 2rem;
+	line-height: 2.5rem;
+	margin: 0 2rem;
+}
+
+#instructions ul li {
+	font-size: 1.5rem;
 }
