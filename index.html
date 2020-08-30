@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css">
 
     <title>Hany Afifi Violin Finger Trainer</title>
@@ -12,69 +14,81 @@
 
 <body>
 
-    <div class="section">
-        <header>
-            <h1>Violin Finger Trainer</h1>
-            <p>Lets start with simple </p>
-        </header>
+    <header class="container" >
+        <h1>Hany Afifi Violin Finger Trainer</h1>
+        <img src="./img/finger-practice.jpg" alt="">
+    </header>
 
-    </div>
-
-    <div class="youtube">
-        <h3>Playing Credits go to: <em>TheHotViolinist</em> </h3>
-        <iframe width="400" height="225" src="https://www.youtube.com/embed/Aev_iseFYK0" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="Instructions">
-        <h1>Lets play A Major Scale (A-B-C-D-E-F-G-A) forward and backward </h1>
-        <div class="strings">
-            <h2>There are 4 strings on the violin, from high to low: E, A, D, and G</h2>
-            <h3>Tab the finger position imagine you hold a real violin</h3>
-        </div>
+    <main>
+        <section class="container" id="youtube">
 
 
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/Aev_iseFYK0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <quote>Playing Credits go to: <em>TheHotViolinist</em> </quote>
 
 
-        <div  class="container" id="fingerboard">
-            <div class="row" id="g">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
+        </section>
+
+        <section class="container" id="instructions">
+            <ul>
+                <li>Lets play A Major Scale (A-B-C-D-E-F-G-A) forward and backward</li>
+                <li>There are 4 strings on the violin, from high to low: E, A, D, and G</li>
+                <li>Tab the finger position imagine you hold a real violin</li>
+            </ul>
+        </section>
+        <div class="divider"></div>
+
+        <section class="container-fluid" id="violin">
+            <div class="container-fluid" id="fingerboard">
+                <div class="row" id="g">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+                <div class="row" id="d">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+                <div class="row" id="a">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+                <div class="row" id="e">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
             </div>
-            <div class="row" id="d">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
-            <div class="row" id="a">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
-            <div class="row" id="e">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
 
-        </div>
+        </section>
+        <div class="divider"></div>
+    </main>
+    <footer>
 
-        <div class="bowing">
-        </div>
-
-    </div>
+    </footer>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <script src="./dist/main.js"></script>
 </body>
 
