@@ -1,0 +1,17 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+}
+
+div#fingerboard {
+	background-image: url(../img/fingerboard.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 40vh;
+	width: 100%;
+}
