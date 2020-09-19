@@ -9,7 +9,6 @@ body {
 	font-family: 'Cinzel', serif;
 	overflow-x: hidden !important;
 	width: 100%;
-	cursor: url(../img/fingers.svg), auto;	
 
 }
 
@@ -86,7 +85,9 @@ header img {
 
 #fingerboard {
 	background: linear-gradient(to bottom, #b28b5c, #964b00 10%, #a37c4d, #964b00 95%, #b28b5c);
-	min-height: 40vh;
+	background-image: url(../img/fingerboard.jpg);
+	background-position: right;
+	height: 200px;
 	min-width: 100vw;
 	border-top: 5px solid #964b00;
 	border-bottom: 5px solid #964b00;
@@ -96,7 +97,7 @@ header img {
 	align-items: center;
 	color: #fff;
 	font-size: 0.75rem;
-
+	cursor: url('../img/fingers.png'), auto;
 }
 
 
@@ -106,9 +107,8 @@ header img {
 }
 
 #g-string div, #d-string div, #a-string div, #e-string div  {
-	flex: 1;
-	height: 20%;
-	margin: 15px;
+	margin-left: 50px;
+	margin-bottom: 25px;
 }
 
 
